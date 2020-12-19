@@ -2,7 +2,8 @@
     "name": "mattonit/mercury",
     "type": "project",
     "require": {
-        "php": "^7.3"
+        "php": "^7.3",
+        "vlucas/phpdotenv": "^5.2@dev"
     },
     "license": "MIT",
     "minimum-stability": "dev",
