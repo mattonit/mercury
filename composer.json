@@ -6,6 +6,11 @@
     },
     "license": "MIT",
     "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
     "scripts": {
         "post-install-cmd": "@php -r \"file_exists('.env') || copy('.env.sample', '.env');\""
     }
