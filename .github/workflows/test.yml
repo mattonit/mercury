@@ -1,0 +1,16 @@
+name: tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_requests:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate composer.json and composer.lock
+        run: composer validate
