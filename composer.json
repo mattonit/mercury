@@ -1,5 +1,6 @@
 {
     "name": "mattonit/mercury",
+    "description": "Mercury web framework",
     "type": "project",
     "require": {
         "php": "^7.3",
