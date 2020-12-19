@@ -1,0 +1,9 @@
+{
+    "name": "mattonit/mercury",
+    "type": "project",
+    "require": {
+        "php": "^7.3"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev"
+}
