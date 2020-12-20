@@ -8,3 +8,9 @@
  */
 
 require __DIR__ . '/../vendor/autoload.php';
+
+use System\Route;
+
+Route::get('/', function() {
+    echo "Hello, Mercury!";
+});
