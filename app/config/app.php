@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'name' => '',
+    'name' => 'Mercury Framework',
     'debug' => (bool) '',
     'url' => ''
 ];
