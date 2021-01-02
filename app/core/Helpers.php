@@ -1,10 +1,12 @@
 <?php
 
+use Core\Env;
+
 if (!function_exists('env')) {
-    function env($key, $default = null)
+    function env($key, $default = null): ?string
     {
 
-        return $key;
+        return Env::get($key) ?? $default;
 
     }
 }

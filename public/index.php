@@ -14,3 +14,5 @@ $app = require_once __DIR__ . '/../app/bootstrap.php';
 ?>
 
 <h1><?= Core\Config::get('app.name'); ?></h1>
+
+<h2><?= env('APP_URL'); ?></h2>
