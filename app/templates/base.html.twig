@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    <!--
+
+    Motif.js library wasn't meant to be used with the Mercury project.
+    I only borrowed a CSS file for the simple intro till I add webpack here
+
+    -->
+
+    <link rel="stylesheet" type="text/css" href="https://raw.githack.com/mattonit/motif.js/dev/dist/motif.css">
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .heading {
+            font-weight: 100;
+        }
+
+        .subtext {
+            font-weight: 300;
+            color: #808080;
+        }
+    </style>
+
+</head>
+<body>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

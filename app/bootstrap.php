@@ -2,10 +2,12 @@
 
 use Core\Router;
 use Core\Request;
-use Core\Response;
+use Core\View;
 
 define('EXT', '.php');
-define('APP_PATH', realpath('../app'));
+define('BASE_PATH', realpath('../'));
+define('APP_PATH', BASE_PATH .'/app');
+define('TEMPLATE_PATH', APP_PATH .'/templates');
 
 /**
  * Initialize the new Router instance
@@ -16,5 +18,5 @@ $router = new Router;
 $route = $router::match(Request::method(), Request::uri());
 
 if(!$route) {
-    echo "404";
+    return view('errors/404');
 }
