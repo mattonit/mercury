@@ -1,7 +1,6 @@
 <?php
 
 use Core\Route;
-use Core\View;
 
 Route::get('/', function() {
 

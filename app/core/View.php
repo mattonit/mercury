@@ -7,7 +7,6 @@ use Twig\Loader\FilesystemLoader;
 
 class View
 {
-    private $twig;
 
     public function __construct($template, $data)
     {

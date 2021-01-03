@@ -28,11 +28,13 @@ class Router
 
         foreach (static::$routes as $keys => $callback) {
 
-            if (preg_match('#^' . $method . ' ' . $uri . '$#', $keys, $matches, PREG_OFFSET_CAPTURE)) {
+            if (preg_match('#^' . $method . ' ' . $uri . '\/?$#', $keys, $matches, PREG_OFFSET_CAPTURE)) {
 
                 $matches = array_slice($matches, 1);
 
-                $callback();
+                if(is_callable($callback)) {
+                    call_user_func($callback);
+                }
 
                 ++$route_found;
 
